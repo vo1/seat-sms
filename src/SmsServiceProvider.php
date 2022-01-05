@@ -8,11 +8,11 @@ class SmsServiceProvider extends AbstractSeatPlugin
 {
     public function boot()
     {
-        $this->addRoutes();
-        $this->addViews();
-        $this->addTranslations();
-
-        $this->addMigrations();
+//        $this->addRoutes();
+//        $this->addViews();
+//        $this->addTranslations();
+//
+//        $this->addMigrations();
     }
 
     /**
@@ -42,9 +42,9 @@ class SmsServiceProvider extends AbstractSeatPlugin
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/Config/sms.config.php', 'awox.config');
-        $this->mergeConfigFrom(__DIR__ . '/Config/sms.sidebar.php', 'package.sidebar');
-        $this->registerPermissions(__DIR__ . '/Config/sms.permissions.php', 'awox');
+//        $this->mergeConfigFrom(__DIR__ . '/Config/sms.config.php', 'awox.config');
+//        $this->mergeConfigFrom(__DIR__ . '/Config/sms.sidebar.php', 'package.sidebar');
+//        $this->registerPermissions(__DIR__ . '/Config/sms.permissions.php', 'awox');
     }
 
     private function addMigrations()
@@ -54,7 +54,7 @@ class SmsServiceProvider extends AbstractSeatPlugin
 
     public function getName(): string
     {
-        return 'AwoxFinder';
+        return 'Sms';
     }
 
     public function getPackageRepositoryUrl(): string
