@@ -1,0 +1,29 @@
+{
+    "name": "vo1/seat-sms",
+    "description": "SeAT Messaging System",
+    "type": "seat-plugin",
+    "autoload": {
+        "psr-4": {
+            "Vo1\\Seat\\Sms\\": "src/",
+            "Vo1\\Seat\\Sms\\database\\seeds\\": "src/database/seeds/"
+        }
+    },
+    "require": {
+        "eveseat/eveapi": "^4.8",
+        "eveseat/services": "^4.1"
+    },
+    "authors": [{
+        "name": "Vo1",
+        "email": "insyon@gmail.com"
+    }],
+    "license": "GPL-3.0-or-later",
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vo1\\Seat\\Sms\\SmsServiceProvider"
+            ]
+        }
+    }
+}
